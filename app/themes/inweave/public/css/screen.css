@@ -1114,7 +1114,6 @@ html.modal-open::after {
 [is=org-page-header] .site-search, [is=org-page-header] .ssp-search {
   --span: auto;
   display: flex;
-  text-align: right;
 }
 [is=org-page-header] .site-search label, [is=org-page-header] .ssp-search label {
   width: 15rem;
@@ -1170,6 +1169,13 @@ html.modal-open::after {
 }
 [is=org-page-header] .ssp-search .search-submit {
   background: none;
+}
+[is=org-page-header] .ssp-search .search-submit:hover {
+  cursor: none;
+  box-shadow: none;
+}
+[is=org-page-header] .ssp-search .search-auto-complete {
+  border-color: var(--accent-light-color);
 }
 [is=org-page-header] .top-level-navigation {
   width: 100%;
