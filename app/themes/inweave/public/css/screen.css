@@ -52,6 +52,10 @@
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
   src: url("/nwea-rebuild-static-test/app/themes/inweave/public/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
+.text-bold {
+  font-weight: 500;
+}
+
 :root {
   --primary-dark-color: #414142;
   --primary-light-color: #fec10d;
@@ -115,8 +119,9 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
+input, [is=org-page-header] .ssp-search .search-input,
 button,
+[is=org-page-header] .ssp-search .search-submit,
 textarea,
 select {
   -webkit-appearance: none;
@@ -126,10 +131,13 @@ select {
 }
 
 /* Remove default Chrome styles for search */
-input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-decoration, [is=org-page-header] .ssp-search [type=search].search-input::-webkit-search-decoration,
 input[type=search]::-webkit-search-cancel-button,
+[is=org-page-header] .ssp-search [type=search].search-input::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+[is=org-page-header] .ssp-search [type=search].search-input::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration,
+[is=org-page-header] .ssp-search [type=search].search-input::-webkit-search-results-decoration {
   -webkit-appearance: none;
           appearance: none;
 }
@@ -280,7 +288,7 @@ nav [aria-label]::after {
   }
 }
 
-button,
+button, [is=org-page-header] .ssp-search .search-submit,
 .btn {
   background-color: var(--background-color);
   border: 0;
@@ -290,38 +298,38 @@ button,
   touch-action: manipulation;
   white-space: nowrap;
 }
-button.primary, button.secondary,
+button.primary, [is=org-page-header] .ssp-search .primary.search-submit, button.secondary, [is=org-page-header] .ssp-search .secondary.search-submit,
 .btn.primary,
 .btn.secondary {
   outline-color: var(--background-color);
 }
-button.primary:focus-visible, button.secondary:focus-visible,
+button.primary:focus-visible, [is=org-page-header] .ssp-search .primary.search-submit:focus-visible, button.secondary:focus-visible, [is=org-page-header] .ssp-search .secondary.search-submit:focus-visible,
 .btn.primary:focus-visible,
 .btn.secondary:focus-visible {
   outline-offset: 3px;
 }
-button.primary,
+button.primary, [is=org-page-header] .ssp-search .primary.search-submit,
 .btn.primary {
   --background-color: var(--tertiary-medium-color);
   color: #fff;
 }
-button.secondary,
+button.secondary, [is=org-page-header] .ssp-search .secondary.search-submit,
 .btn.secondary {
   --background-color: var(--primary-light-color);
   color: var(--primary-dark-color);
 }
-button.standout,
+button.standout, [is=org-page-header] .ssp-search .standout.search-submit,
 .btn.standout {
   text-transform: uppercase;
 }
 @media (max-width: 750px) {
-  button,
+  button, [is=org-page-header] .ssp-search .search-submit,
 .btn {
     width: 100%;
   }
 }
 
-input,
+input, [is=org-page-header] .ssp-search .search-input,
 select,
 textarea {
   border: 1px solid var(--accent-light-color);
@@ -769,6 +777,7 @@ html.modal-open::after {
   }
 }
 [is=org-page-header] .nav-item {
+  position: relative;
   /* stylelint-enable selector-max-compound-selectors */
 }
 [is=org-page-header] .nav-item > a {
@@ -1024,7 +1033,7 @@ html.modal-open::after {
     top: 0;
     width: 100vw;
   }
-  [is=org-page-header][aria-expanded=true] .content .site-search,
+  [is=org-page-header][aria-expanded=true] .content .site-search, [is=org-page-header][aria-expanded=true] .content .ssp-search,
 [is=org-page-header][aria-expanded=true] .content .top-level-navigation,
 [is=org-page-header][aria-expanded=true] .content .utility-navigation {
     -webkit-animation: fade-in;
@@ -1092,7 +1101,7 @@ html.modal-open::after {
     width: 100%;
     margin-left: calc(var(--grid-horizontal-margin) * -1);
   }
-  [is=org-page-header] .masthead ~ .site-search,
+  [is=org-page-header] .masthead ~ .site-search, [is=org-page-header] .masthead ~ .ssp-search,
 [is=org-page-header] .masthead ~ .top-level-navigation,
 [is=org-page-header] .masthead ~ .utility-navigation {
     display: none;
@@ -1102,20 +1111,20 @@ html.modal-open::after {
     width: 7rem;
   }
 }
-[is=org-page-header] .site-search {
+[is=org-page-header] .site-search, [is=org-page-header] .ssp-search {
   --span: auto;
   display: flex;
   text-align: right;
 }
-[is=org-page-header] .site-search label {
+[is=org-page-header] .site-search label, [is=org-page-header] .ssp-search label {
   width: 15rem;
 }
-[is=org-page-header] .search-button {
+[is=org-page-header] .search-button, [is=org-page-header] .ssp-search .search-submit {
   color: var(--accent-dark-color);
   position: relative;
   width: 3rem;
 }
-[is=org-page-header] .search-button::after {
+[is=org-page-header] .search-button::after, [is=org-page-header] .ssp-search .search-submit::after {
   background-color: currentColor;
   content: "";
   height: 100%;
@@ -1126,7 +1135,7 @@ html.modal-open::after {
   top: 0;
   width: 100%;
 }
-[is=org-page-header] .search-button:focus-visible, [is=org-page-header] .search-button:hover {
+[is=org-page-header] .search-button:focus-visible, [is=org-page-header] .ssp-search .search-submit:focus-visible, [is=org-page-header] .search-button:hover, [is=org-page-header] .ssp-search .search-submit:hover {
   color: var(--primary-dark-color);
 }
 [is=org-page-header] [type=search] {
@@ -1144,13 +1153,23 @@ html.modal-open::after {
   }
 }
 @media (max-width: 992px) {
-  [is=org-page-header] .site-search {
+  [is=org-page-header] .site-search, [is=org-page-header] .ssp-search {
     order: 1;
     padding: 2rem 1rem;
   }
-  [is=org-page-header] .site-search label {
+  [is=org-page-header] .site-search label, [is=org-page-header] .ssp-search label {
     flex: 1;
   }
+}
+[is=org-page-header] .ssp-search .search-input {
+  width: 15rem;
+  max-width: 100%;
+}
+[is=org-page-header] .ssp-search .search-input, [is=org-page-header] .ssp-search .search-submit {
+  border-radius: 0;
+}
+[is=org-page-header] .ssp-search .search-submit {
+  background: none;
 }
 [is=org-page-header] .top-level-navigation {
   width: 100%;
