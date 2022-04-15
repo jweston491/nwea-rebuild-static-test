@@ -4834,7 +4834,7 @@ textarea.form-control-lg {
   padding: 0.5rem 2.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #454243;
   white-space: nowrap;
 }
 
@@ -15712,9 +15712,123 @@ figure.woocommerce-product-gallery__wrapper {
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
   src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
-.fw-fix, .navbar .active > a,
-.navbar .nav-link:hover, .dropdown-item:hover, .dropdown-item:focus {
-  text-shadow: -0.5px 0 currentColor, 0.5px 0 currentColor;
+.fw-fix:hover, .dropdown-item:hover {
+  font-weight: 500;
+}
+
+.fw-fix:before, .dropdown-item:before {
+  display: block;
+  content: attr(title);
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.fullbleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .dropdown .dropdown-col-border-md-left {
+    position: relative;
+  }
+  .dropdown .dropdown-col-border-md-left:after {
+    background-color: black;
+    content: "";
+    height: calc(100% - 4rem);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    z-index: 1;
+  }
+}
+
+.dropdown-item[data-depth="2"] {
+  padding-left: 4.045rem;
+}
+
+.caret-off::before {
+  display: none;
+}
+
+.caret-off::after {
+  display: none;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-Book"), local("Gotham Book");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 400;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-BookItalic"), local("Gotham Book Italic");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-Medium"), local("Gotham Medium");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 500;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-Bold"), local("Gotham Bold");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 700;
+  unicode-range: U+0020-00FE;
+  src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
+  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
+}
+.fw-fix:hover, .dropdown-item:hover {
+  font-weight: 500;
+}
+
+.fw-fix:before, .dropdown-item:before {
+  display: block;
+  content: attr(title);
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .fullbleed {
@@ -15781,64 +15895,10 @@ figure.woocommerce-product-gallery__wrapper {
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
   src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
-.dropdown-item[data-depth="2"] {
-  padding-left: 4.045rem;
+.navbar .active > a {
+  font-weight: 500;
 }
 
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 400;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-Book"), local("Gotham Book");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Book.woff2?822b1d0fc71165304130bb16176eebd6") format("woff2");
-}
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: italic;
-  font-weight: 400;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-BookItalic"), local("Gotham Book Italic");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Book Italic.woff2?0f544f9b441de5c2ba0d4bd133bd0772") format("woff2");
-}
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 500;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-Medium"), local("Gotham Medium");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Medium.woff2?eb025c0b7d84a2c6eaec3fc9c69cb796") format("woff2");
-}
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: italic;
-  font-weight: 500;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-MediumItalic"), local("Gotham Medium Italic");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Medium Italic.woff2?a1271e9811395f85f4ab865e3b46f1d9") format("woff2");
-}
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 700;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-Bold"), local("Gotham Bold");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold.woff2?c4fece77364a317260ff363fee52eae3") format("woff2");
-}
-@font-face {
-  font-family: "Gotham";
-  font-stretch: normal;
-  font-style: italic;
-  font-weight: 700;
-  unicode-range: U+0020-00FE;
-  src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
-  src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
-}
 .navbar-brand > img {
   width: 100%;
   max-width: 10.3rem;
@@ -15854,6 +15914,9 @@ figure.woocommerce-product-gallery__wrapper {
   width: 100%;
 }
 
+.nav-item .dropdown-menu {
+  position: absolute;
+}
 @media all and (min-width: 992px) {
   .navbar-nav .dropdown .dropdown-menu {
     display: none;
@@ -15921,8 +15984,16 @@ figure.woocommerce-product-gallery__wrapper {
   src: local("Gotham-BoldItalic"), local("Gotham Bold Italic");
   src: url("/nwea-rebuild-static-test/app/themes/understrap-child/fonts/Gotham Bold Italic.woff2?6f1e6babcc7637bb03340fc0d8a8b1f8") format("woff2");
 }
-.fw-fix {
-  text-shadow: -0.5px 0 currentColor, 0.5px 0 currentColor;
+.fw-fix:hover, .dropdown-item:hover {
+  font-weight: 500;
+}
+.fw-fix:before, .dropdown-item:before {
+  display: block;
+  content: attr(title);
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .fullbleed {
