@@ -9296,11 +9296,41 @@
 	  }
 	})();
 
-	let wpTemplate = wp.template('my-template'); // $el.html( wpTemplate( { name: "World" } ) );
+	let card = wp.template('nwea-card'); // jQuery('#home-cards').html( wpTemplate( {title: "My Dynamic Title" } ) );
 
-	jQuery('#index-wrapper').append(wpTemplate({
-	  name: "World"
-	}));
+	jQuery.ajax({
+	  type: 'GET',
+	  url: 'https://nwea-local-lando.lndo.site/wp-json/wp/v2/posts/?_embed=1' // data: { action: 'createHTML' },
+
+	}).done(function (response) {
+	  console.log(response);
+	  jQuery.each(response, (i, post) => {
+	    let cardWrapper = jQuery('<col></col>'); // Optional fields
+
+	    let imageUrl = 'https://www.nwea.org/content/uploads/2020/10/nwea-center_press-release_thumbnail.png';
+	    let imageAlt = '';
+
+	    if (typeof post._embedded['wp:featuredmedia'] !== 'undefined') {
+	      imageUrl = post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url;
+	      imageAlt = post._embedded['wp:featuredmedia'][0].alt_text;
+	    }
+
+	    jQuery('#home-cards').append(cardWrapper.html(card({
+	      title: post.title.rendered,
+	      excerpt: post.excerpt.rendered,
+	      link: post.link,
+	      category: post._embedded['wp:term'][0].map(cat => cat.name).join(', '),
+	      image: imageUrl,
+	      imageAlt: imageAlt,
+	      date: new Date(post.date).toLocaleDateString("en-US", {
+	        year: 'numeric',
+	        month: 'long',
+	        day: 'numeric'
+	      }),
+	      cta: 'Read more'
+	    })));
+	  });
+	});
 
 	exports.Alert = alert;
 	exports.Button = button;
