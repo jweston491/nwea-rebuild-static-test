@@ -12,7 +12,7 @@
 	<atom:link href="/nwea-rebuild-static-test/feed/" rel="self" type="application/rss+xml" />
 	<link>/nwea-rebuild-static-test/</link>
 	<description></description>
-	<lastBuildDate>Thu, 12 May 2022 22:31:50 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 16 May 2022 20:16:37 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -25,7 +25,8 @@
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
 		<pubDate>Tue, 29 Mar 2022 21:43:42 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
+				<category><![CDATA[Category 1]]></category>
+		<category><![CDATA[Category 2]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=58</guid>
 
 					<description><![CDATA[An optional excerpt]]></description>
@@ -66,8 +67,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=56</guid>
 
 					<description><![CDATA[Resource Center Item #2 content.]]></description>
-										<content:encoded><![CDATA[<p>Resource Center Item #2 content.</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[Resource Center Item #2 content.]]></content:encoded>
 					
 		
 		
@@ -82,8 +82,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=54</guid>
 
 					<description><![CDATA[Resource Center Item #1 content]]></description>
-										<content:encoded><![CDATA[<p>Resource Center Item #1 content</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[Resource Center Item #1 content]]></content:encoded>
 					
 		
 		
@@ -98,8 +97,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=16</guid>
 
 					<description><![CDATA[This is some content.]]></description>
-										<content:encoded><![CDATA[<p>This is some content.</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[This is some content.]]></content:encoded>
 					
 		
 		
@@ -114,8 +112,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=20</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;20&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></content:encoded>
 					
 		
 		
@@ -130,8 +127,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=18</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;18&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></content:encoded>
 					
 		
 		
@@ -146,8 +142,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=14</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;14&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;14&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;14&#8243;]]]></content:encoded>
 					
 		
 		
@@ -162,8 +157,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=12</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;12&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;12&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;12&#8243;]]]></content:encoded>
 					
 		
 		
