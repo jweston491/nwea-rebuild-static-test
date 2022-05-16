@@ -15665,6 +15665,11 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+.card .card-img-top {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 30%;
+}
 .card:hover {
   transition: box-shadow 0.1618s ease;
 }
