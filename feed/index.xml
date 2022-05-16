@@ -12,7 +12,7 @@
 	<atom:link href="/nwea-rebuild-static-test/feed/" rel="self" type="application/rss+xml" />
 	<link>/nwea-rebuild-static-test/</link>
 	<description></description>
-	<lastBuildDate>Tue, 12 Apr 2022 00:43:42 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 12 May 2022 22:31:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,7 +28,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=58</guid>
 
-					<description><![CDATA[ [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/resource-center-item-3/">Read More...<span class="screen-reader-text"> from Resource Center Item #3</span></a></p>]]></description>
+					<description><![CDATA[An optional excerpt]]></description>
 										<content:encoded><![CDATA[
 <div class="wp-block-columns alignwide has-pink-background-color has-background">
 <div class="wp-block-column" style="flex-basis:18.75%"></div>
@@ -65,7 +65,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=56</guid>
 
-					<description><![CDATA[Resource Center Item #2 content. [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/resource-center-item-2/">Read More...<span class="screen-reader-text"> from Resource Center Item #2</span></a></p>]]></description>
+					<description><![CDATA[Resource Center Item #2 content.]]></description>
 										<content:encoded><![CDATA[<p>Resource Center Item #2 content.</p>
 ]]></content:encoded>
 					
@@ -81,7 +81,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=54</guid>
 
-					<description><![CDATA[Resource Center Item #1 content [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/resource-center-item-1/">Read More...<span class="screen-reader-text"> from Resource Center Item #1</span></a></p>]]></description>
+					<description><![CDATA[Resource Center Item #1 content]]></description>
 										<content:encoded><![CDATA[<p>Resource Center Item #1 content</p>
 ]]></content:encoded>
 					
@@ -97,7 +97,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=16</guid>
 
-					<description><![CDATA[This is some content. [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/new-post-1/">Read More...<span class="screen-reader-text"> from New Post 1</span></a></p>]]></description>
+					<description><![CDATA[This is some content.]]></description>
 										<content:encoded><![CDATA[<p>This is some content.</p>
 ]]></content:encoded>
 					
@@ -113,7 +113,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=20</guid>
 
-					<description><![CDATA[[flyntTheContent id=&#8221;20&#8243;] [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/new-post-3/">Read More...<span class="screen-reader-text"> from New Post 3</span></a></p>]]></description>
+					<description><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></description>
 										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;20&#8243;]</p>
 ]]></content:encoded>
 					
@@ -129,7 +129,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=18</guid>
 
-					<description><![CDATA[[flyntTheContent id=&#8221;18&#8243;] [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/new-post-2/">Read More...<span class="screen-reader-text"> from New Post 2</span></a></p>]]></description>
+					<description><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></description>
 										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;18&#8243;]</p>
 ]]></content:encoded>
 					
@@ -145,7 +145,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=14</guid>
 
-					<description><![CDATA[[flyntTheContent id=&#8221;14&#8243;] [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/media-mention-my-uncool-mention/">Read More...<span class="screen-reader-text"> from Media Mention: My Uncool Mention</span></a></p>]]></description>
+					<description><![CDATA[[flyntTheContent id=&#8221;14&#8243;]]]></description>
 										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;14&#8243;]</p>
 ]]></content:encoded>
 					
@@ -161,7 +161,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=12</guid>
 
-					<description><![CDATA[[flyntTheContent id=&#8221;12&#8243;] [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/media-mention-some-cool-mention/">Read More...<span class="screen-reader-text"> from Media Mention: Some Cool Mention</span></a></p>]]></description>
+					<description><![CDATA[[flyntTheContent id=&#8221;12&#8243;]]]></description>
 										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;12&#8243;]</p>
 ]]></content:encoded>
 					
@@ -171,20 +171,17 @@
 		<item>
 		<title>Hello world!</title>
 		<link>/nwea-rebuild-static-test/hello-world/</link>
-					<comments>/nwea-rebuild-static-test/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
 		<pubDate>Mon, 28 Feb 2022 22:42:22 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=1</guid>
 
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing! [...]<p><a class="btn btn-secondary understrap-read-more-link" href="/nwea-rebuild-static-test/hello-world/">Read More...<span class="screen-reader-text"> from Hello world!</span></a></p>]]></description>
+					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/nwea-rebuild-static-test/hello-world/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>
