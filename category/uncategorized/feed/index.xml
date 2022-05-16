@@ -12,7 +12,7 @@
 	<atom:link href="/nwea-rebuild-static-test/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link>/nwea-rebuild-static-test/</link>
 	<description></description>
-	<lastBuildDate>Tue, 12 Apr 2022 00:43:42 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 27 Apr 2022 16:46:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,43 +20,6 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.9.3</generator>
 	<item>
-		<title>Resource Center Item #3</title>
-		<link>/nwea-rebuild-static-test/resource-center-item-3/</link>
-		
-		<dc:creator><![CDATA[jake.weston]]></dc:creator>
-		<pubDate>Tue, 29 Mar 2022 21:43:42 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=58</guid>
-
-					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[
-<div class="wp-block-columns alignwide has-pink-background-color has-background">
-<div class="wp-block-column" style="flex-basis:18.75%"></div>
-
-
-
-<div class="wp-block-column" style="flex-basis:37.5%"></div>
-
-
-
-<div class="wp-block-column" style="flex-basis:18.75%"></div>
-
-
-
-<div class="wp-block-column" style="flex-basis:25%"></div>
-</div>
-
-
-
-<div class="wp-block-cover"><span aria-hidden="true" class="has-pink-background-color has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container">
-<p class="has-text-align-center has-large-font-size">Some title</p>
-</div></div>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
 		<title>Resource Center Item #2</title>
 		<link>/nwea-rebuild-static-test/resource-center-item-2/</link>
 		
@@ -66,8 +29,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=56</guid>
 
 					<description><![CDATA[Resource Center Item #2 content.]]></description>
-										<content:encoded><![CDATA[<p>Resource Center Item #2 content.</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[Resource Center Item #2 content.]]></content:encoded>
 					
 		
 		
@@ -82,8 +44,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=54</guid>
 
 					<description><![CDATA[Resource Center Item #1 content]]></description>
-										<content:encoded><![CDATA[<p>Resource Center Item #1 content</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[Resource Center Item #1 content]]></content:encoded>
 					
 		
 		
@@ -98,8 +59,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=16</guid>
 
 					<description><![CDATA[This is some content.]]></description>
-										<content:encoded><![CDATA[<p>This is some content.</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[This is some content.]]></content:encoded>
 					
 		
 		
@@ -114,8 +74,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=20</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;20&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></content:encoded>
 					
 		
 		
@@ -130,8 +89,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=18</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;18&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></content:encoded>
 					
 		
 		
@@ -146,8 +104,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=14</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;14&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;14&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;14&#8243;]]]></content:encoded>
 					
 		
 		
@@ -162,8 +119,7 @@
 		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=12</guid>
 
 					<description><![CDATA[[flyntTheContent id=&#8221;12&#8243;]]]></description>
-										<content:encoded><![CDATA[<p>[flyntTheContent id=&#8221;12&#8243;]</p>
-]]></content:encoded>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;12&#8243;]]]></content:encoded>
 					
 		
 		
@@ -171,7 +127,6 @@
 		<item>
 		<title>Hello world!</title>
 		<link>/nwea-rebuild-static-test/hello-world/</link>
-					<comments>/nwea-rebuild-static-test/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[jake.weston]]></dc:creator>
 		<pubDate>Mon, 28 Feb 2022 22:42:22 +0000</pubDate>
@@ -183,8 +138,6 @@
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/nwea-rebuild-static-test/hello-world/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>
