@@ -11,11 +11,11 @@
 	<atom:link href="/nwea-rebuild-static-test/new-post-2/feed/" rel="self" type="application/rss+xml" />
 	<link>/nwea-rebuild-static-test/new-post-2/</link>
 	<description></description>
-	<lastBuildDate>Wed, 27 Apr 2022 16:46:40 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 03 Jun 2022 19:51:48 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 </channel>
 </rss>
