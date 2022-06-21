@@ -12,13 +12,13 @@
 	<atom:link href="/nwea-rebuild-static-test/category/category-1/feed/" rel="self" type="application/rss+xml" />
 	<link>/nwea-rebuild-static-test/</link>
 	<description></description>
-	<lastBuildDate>Mon, 16 May 2022 20:16:37 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 03 Jun 2022 19:51:48 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 	<item>
 		<title>Resource Center Item #3</title>
 		<link>/nwea-rebuild-static-test/resource-center-item-3/</link>
@@ -31,20 +31,20 @@
 
 					<description><![CDATA[An optional excerpt]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-columns alignwide has-pink-background-color has-background">
-<div class="wp-block-column" style="flex-basis:18.75%"></div>
+<div class="wp-container-5 wp-block-columns alignwide has-pink-background-color has-background">
+<div class="wp-container-1 wp-block-column" style="flex-basis:18.75%"></div>
 
 
 
-<div class="wp-block-column" style="flex-basis:37.5%"></div>
+<div class="wp-container-2 wp-block-column" style="flex-basis:37.5%"></div>
 
 
 
-<div class="wp-block-column" style="flex-basis:18.75%"></div>
+<div class="wp-container-3 wp-block-column" style="flex-basis:18.75%"></div>
 
 
 
-<div class="wp-block-column" style="flex-basis:25%"></div>
+<div class="wp-container-4 wp-block-column" style="flex-basis:25%"></div>
 </div>
 
 
@@ -53,6 +53,53 @@
 <p class="has-text-align-center has-large-font-size">Some title</p>
 </div></div>
 ]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Resource Center Item #1</title>
+		<link>/nwea-rebuild-static-test/resource-center-item-1/</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Tue, 29 Mar 2022 21:42:28 +0000</pubDate>
+				<category><![CDATA[Category 1]]></category>
+		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=54</guid>
+
+					<description><![CDATA[Resource Center Item #1 content]]></description>
+										<content:encoded><![CDATA[Resource Center Item #1 content]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New Post 3</title>
+		<link>/nwea-rebuild-static-test/new-post-3/</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2022 22:55:36 +0000</pubDate>
+				<category><![CDATA[Category 1]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=20</guid>
+
+					<description><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></description>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;20&#8243;]]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New Post 2</title>
+		<link>/nwea-rebuild-static-test/new-post-2/</link>
+		
+		<dc:creator><![CDATA[jake.weston]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2022 22:55:10 +0000</pubDate>
+				<category><![CDATA[Category 1]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/nwea-rebuild-static-test/?p=18</guid>
+
+					<description><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></description>
+										<content:encoded><![CDATA[[flyntTheContent id=&#8221;18&#8243;]]]></content:encoded>
 					
 		
 		
