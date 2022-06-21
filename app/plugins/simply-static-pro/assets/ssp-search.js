@@ -1,10 +1,12 @@
+'use strict';
+
 const searchResults = [];
 
 // Check if we are on the static site.
 var current_url = window.location.origin;
 var static_url = document.querySelector("meta[name='ssp-url']").getAttribute("content");
 
-if ( static_url.includes(current_url ) ) {
+if (static_url.includes(current_url)) {
   // Get index from JSON file.
   var baseurl = document.querySelector("meta[name='ssp-config-url']").getAttribute("content");
   var host_name = window.location.hostname;
@@ -12,6 +14,21 @@ if ( static_url.includes(current_url ) ) {
   let index_url = baseurl + host_name.split('.').join('-') + '-index.json';
   let index;
 
+  // Multilingual?
+  let language = document.documentElement.lang.substring(0, 2);
+  let is_multilingual = false;
+
+  if (document.getElementsByTagName("link").length) {
+    let links = document.getElementsByTagName("link");
+
+    for (const link of links) {
+      var language_tag = link.getAttribute("hreflang");
+
+      if ('' != language_tag && null !== language_tag) {
+        is_multilingual = true;
+      }
+    }
+  }
 
   function loadIndex(callback) {
     var xobj = new XMLHttpRequest();
@@ -37,8 +54,16 @@ if ( static_url.includes(current_url ) ) {
         title: value.title,
         excerpt: value.excerpt,
         content: value.content,
+        language: value.language
       };
-      searchResults.push(result);
+
+      if (is_multilingual) {
+        if (result.language === language) {
+          searchResults.push(result);
+        }
+      } else {
+        searchResults.push(result);
+      }
     }
   });
 
@@ -57,7 +82,7 @@ if ( static_url.includes(current_url ) ) {
   const fuse = new Fuse(
     searchResults,
     {
-      keys: ['title', 'content'],
+      keys: ['title', 'content', 'language'],
       shouldSort: true,
       threshold: 0.5,
       maxPatternLength: 50
@@ -65,8 +90,8 @@ if ( static_url.includes(current_url ) ) {
 
   function renderAutoComplete() {
     if (!showAutoComplete || input.length < 3 || results.length === 0) {
-      autoCompleteNode.classList.remove('show');
-      return '';
+      var element = document.getElementsByClassName('fuse-search');
+      return '<ul><li class="auto-complete-item"><p><small>' + element[0].dataset.noresult + '</small></p></li></ul>';
     } else {
       autoCompleteNode.classList.add('show');
     }
@@ -134,7 +159,7 @@ if ( static_url.includes(current_url ) ) {
     autoCompleteNode.innerHTML = renderAutoComplete();
   }
 
-  if ( document.getElementsByClassName( 'search-input-container' ).length > 0 ) {
+  if (document.getElementsByClassName('search-input-container').length > 0) {
     document.querySelector('.search-input-container').addEventListener('keydown', handleSearchKeyDown);
     searchInputNode.addEventListener('input', handleSearchInput);
     window.addEventListener('click', handleWindowClick);
